@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agenda - Amorabi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6d2b3;
+    }
+
+    #tela4 {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .agenda-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .agenda {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      flex: 2;
+    }
+
+    .agenda-item {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #999;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5px;
+      border-radius: 4px;
+      background-color: #eee;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #f7f1e9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    aside h4 {
+      margin-top: 0;
+      font-weight: bold;
+      border-bottom: 2px solid #7a6e5d;
+      padding-bottom: 5px;
+    }
+
+    aside ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      padding-left: 0;
+    }
+
+    aside ul li {
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <section id="tela4">
+    <h2>Agenda</h2>
+    <div class="agenda-container">
+      <div class="agenda">
+        <div class="agenda-item">1</div>
+        <div class="agenda-item">2</div>
+        <div class="agenda-item">3</div>
+        <div class="agenda-item">4</div>
+        <div class="agenda-item">5</div>
+        </div>
+      <aside>
+        <h4>Oficinas Inscritas</h4>
+        <ul>
+          <li>Teatro Infantil</li>
+          <li>Violão e Canto</li>
+          <li>Capoeira</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</body>
+</html>

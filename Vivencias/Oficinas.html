@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oficinas - Amorabi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e6d2b3;
+    }
+
+    #tela3 {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #tela3 h2 {
+      text-align: center;
+      color: #7a6e5d;
+      margin-bottom: 20px;
+    }
+
+    .oficinas {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fdfdfd;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .card p {
+      margin: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <section id="tela3">
+    <h2>Oficinas</h2>
+    <div class="oficinas">
+      <div class="card">
+        <img src="img1.jpg" alt="Oficina 1">
+        <p>Teatro Infantil</p>
+      </div>
+      <div class="card">
+        <img src="img2.jpg" alt="Oficina 2">
+        <p>Violão e Canto</p>
+      </div>
+      <div class="card">
+        <img src="img3.jpg" alt="Oficina 3">
+        <p>Capoeira</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
